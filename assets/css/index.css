@@ -93,5 +93,58 @@
         border-radius: 30px;
         backdrop-filter: blur(10px);
     }
+
+    .accordion-card {
+        cursor: pointer;
+        width: 603px;
+        padding: 1.25rem;
+        background-color: #F4F5F8;
+        border-radius: 16px;
+        transition: background-color 0.5s ease;
+        display: flex;
+        flex-direction: column;
+      }
+  
+      .accordion-card:hover {
+        background-color: #f9f9f9;
+      }
+  
+      .accordion-card h4 {
+        color: #4a5568;
+        font-size: 2rem;
+        font-weight: bold;
+      }
+  
+      .accordion-card button {
+        background: none;
+        border: none;
+      }
+  
+      .accordion-card img {
+        width: 1.125rem;
+        height: 1.125rem;
+        object-fit: contain;
+        transition: transform 0.5s ease;
+      }
+  
+      .accordion-content {
+        width: 563px;
+        color: #0B0B1B;
+        font-size: 20px;
+        line-height: 36px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease;
+      }
+  
+      .accordion-card.active .accordion-content {
+        max-height: 500px; /* Adjust the value based on your content */
+        transition: max-height 0.5s ease;
+      }
+  
+      .accordion-card.active button img {
+        transform: rotate(180deg);
+        transition: transform 0.5s ease;
+      }
     
 }

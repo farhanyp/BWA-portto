@@ -401,37 +401,39 @@
             <a href="#" class="btn-dark-blue font-bold text-lg font-white">Contact Me</a>
           </div>
 
-          <div class="w-[603px] flex flex-col justify-between gap-[30px]">
-            <div class="w-[603px] p-5 bg-service_card rounded-[16px]">
+          <div class="flex flex-col gap-[30px]">
+            <div class="accordion-card gap-5" id="accordion1" onclick="toggleAccordion('accordion1')">
               <div class="flex justify-between">
                 <h4 class="text-primary text-2xl font-bold">How do I work usually?</h4>
-                <button id="toggleButton1">
-                  <img id="accordionImage1" src="assets/VectorUp.svg" alt="" srcset="" class="w-9 h-9 object-contain">
+                <button>
+                  <img src="assets/VectorUp.svg" alt="" class="w-9 h-9 object-contain">
                 </button>
               </div>
-              <p id="accordionParagraph1" class="text-primary text-[20px] leading-[36px] pt-5 hidden">As a freelancer, my work process is characterized by flexibility, self-discipline, and a strong emphasis on client communication.</p>
-            </div>
-
-            <div class="w-[603px] p-5 bg-service_card rounded-[16px]">
+              <p class="accordion-content">As a freelancer, my work process is characterized by flexibility, self-discipline, and a strong emphasis on client communication.</p>
+              </div>
+            
+            <div class="accordion-card gap-5" id="accordion2" onclick="toggleAccordion('accordion2')">
               <div class="flex justify-between">
                 <h4 class="text-primary text-2xl font-bold">How much I charge per project?</h4>
-                <button id="toggleButton2">
-                  <img id="accordionImage2" src="assets/VectorUp.svg" alt="" srcset="" class="w-9 h-9 object-contain">
+                <button>
+                  <img src="assets/VectorUp.svg" alt="" class="w-9 h-9 object-contain">
                 </button>
               </div>
-              <p id="accordionParagraph2" class="text-primary text-[20px] leading-[36px] pt-5 hidden">I don’t charge hourly. I charge based on the project brief and given timeline to finish that particular project.</p>
+              <p class="accordion-content font-normal">I don’t charge hourly. I charge based on the project brief and given timeline to finish that particular project.</p>
             </div>
-
-            <div class="w-[603px] p-5 bg-service_card rounded-[16px]">
+            
+            <div class="accordion-card gap-5" id="accordion3" onclick="toggleAccordion('accordion3')">
               <div class="flex justify-between">
                 <h4 class="text-primary text-2xl font-bold">Can I work full-time?</h4>
-                <button id="toggleButton3">
-                  <img id="accordionImage3" src="assets/VectorUp.svg" alt="" srcset="" class="w-9 h-9 object-contain">
+                <button>
+                  <img src="assets/VectorUp.svg" alt="" class="w-9 h-9 object-contain">
                 </button>
               </div>
-              <p id="accordionParagraph3" class="text-primary text-[20px] leading-[36px] pt-5 hidden">I don’t work full-time. At this moment, I prefer to work remotely and based on the certain project only.</p>
+              <p class="accordion-content">I don’t work full-time. At this moment, I prefer to work remotely and based on the certain project only.</p>
             </div>
           </div>
+
+        </div>
         </section>
       </div>
     </div>
@@ -495,6 +497,9 @@
 
 </body>
 
+<script>
+
+</script>
 <script src="assets/css/accordian.js"></script>
 <script>
     tailwind.config = {

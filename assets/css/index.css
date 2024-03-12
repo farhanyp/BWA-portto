@@ -138,7 +138,7 @@
       }
   
       .accordion-card.active .accordion-content {
-        max-height: 500px; /* Adjust the value based on your content */
+        max-height: 500px;
         transition: max-height 0.5s ease;
       }
   
